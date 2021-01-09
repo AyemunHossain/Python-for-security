@@ -1,0 +1,3 @@
+set c=new
+
+gcc -shared -Wl,-soname,%c% -o %c%.so -fPIC %c%.c
