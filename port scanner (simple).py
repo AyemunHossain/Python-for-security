@@ -11,7 +11,7 @@ for i in range(20,500):
    s = socket(AF_INET, SOCK_STREAM)
    conn = s.connect_ex((t_ip,i))
    if conn == 0:
-      print(f"{i} port is open")
+      print(f"Port No : {i} is open")
    s.close()
 
 print(f"The scanning takes {time.time()-startTime}")
